@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kitchen Duty</title><link rel="stylesheet" href="style.css"></head><body>
+<main class="app"><header><div><p class="eyebrow">HOSTEL</p><h1>Kitchen Duty</h1></div><button id="adminBtn" class="ghost">Admin</button></header>
+<section class="slider"><button id="prev" class="arrow">‹</button><div id="card" class="card"><div id="date" class="date">Loading…</div><div id="room" class="room">—</div></div><button id="next" class="arrow">›</button></section>
+<div id="dots" class="dots"></div><p id="status" class="status"></p>
+<section id="adminPanel" class="admin hidden"><div class="admin-head"><h2>Manage duties</h2><button id="closeAdmin" class="ghost">Close</button></div>
+<div id="loginBox"><input id="email" type="email" placeholder="Admin email"><input id="password" type="password" placeholder="Password"><button id="loginBtn">Login</button></div>
+<div id="manageBox" class="hidden"><form id="dutyForm"><input id="dutyDate" type="date" required><input id="roomNumber" placeholder="Room number" required><button>Add duty</button></form><button id="logoutBtn" class="logout">Log out</button><div id="dutyList"></div></div>
+</section></main>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="config.js"></script><script src="app.js"></script></body></html>
